@@ -4,3 +4,4 @@
 3. **Self-host fonts** with the original woff2 files and @font-face rules (no next/font) so metrics and `size-adjust` match exactly.
 4. Served at `/` instead of `/demo/hale`; image paths become `/img/*`.
 5. No tests, no extras (client-prototype preference).
+6. `suppressHydrationWarning` on the newsletter email input — browser extensions (e.g. Temp Mail) inject attributes into email fields before hydration; scoped to that one element only.

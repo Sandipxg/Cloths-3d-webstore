@@ -194,7 +194,7 @@ export default function FooterRail({ onView }: { onView: (i: number, el: HTMLEle
           <p>One letter a season. New pieces, the workshops behind them, nothing else.</p>
           <label>
             <span className="sr">Email address</span>
-            <input type="email" required placeholder="Your email" disabled={joined} />
+            <input type="email" required placeholder="Your email" disabled={joined} suppressHydrationWarning />
             <button type="submit" disabled={joined}>
               {joined ? "You're on the list ✓" : "Sign up →"}
             </button>
